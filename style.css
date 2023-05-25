@@ -1,0 +1,57 @@
+:root {
+    --my-background: #16161D;
+    --hint-background: black;
+    /* --hint-background: #16161D;
+    --my-background: black; */
+}
+
+body {
+    background-color: var(--my-background);
+    font-family: monospace;
+    color: green;
+    font-size: 16px;text-align: center;
+}
+
+board {
+    white-space: nowrap;
+    overflow-x: auto;
+
+}
+
+.cell {
+    width: 90px;
+    height: 90px;
+    border: 1px solid var(--my-background);
+    background-color: green;
+    font-size: 64px;
+    color: black;
+    display: inline-block;
+    line-height: 90px; /* set same height as cell */
+    text-align: center; /* center horizontally */
+    vertical-align: middle; /* center vertically */
+  }
+
+.hint-cell {
+    width: 90px;
+    height: 90px;
+    border: 1px solid var(--my-background);
+    color: green;
+    font-size: 64px;
+    background-color: var(--hint-background);
+    display: inline-block;
+    line-height: 90px; /* set same height as cell */
+    text-align: center; /* center horizontally */
+    vertical-align: middle; /* center vertically */
+}
+
+.empty-cell {
+    width: 90px;
+    height: 90px;
+    border: 1px solid var(--my-background);
+    color: green;
+    font-size: 64px;
+    display: inline-block;
+    line-height: 90px; /* set same height as cell */
+    text-align: center; /* center horizontally */
+    vertical-align: middle; /* center vertically */
+}
